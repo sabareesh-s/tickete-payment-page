@@ -1,15 +1,21 @@
-'use client';
-import Image from 'next/image'
-import Header from './components/Header'
-import PaymentForm from './components/PaymentForm';
+"use client";
+import Image from "next/image";
+import Header from "./components/Header";
+import PaymentForm from "./components/PaymentForm";
+import ProductDetails from "./components/ProductDetails";
 
 export default function Home() {
   return (
     <main className="">
-      <Header title="tickete"  onClick={() => console.log("Help button clicked")} />
-      <section className='w-[75rem] mx-auto pt-[6.25rem]'>
-        <PaymentForm/>
+      <Header
+        title="tickete"
+        onClick={() => console.log("Help button clicked")}
+      />
+      <section className="w-[75rem] mx-auto pt-[6.25rem] flex flex-1 space-x-6">
+        <PaymentForm />
+        <span className="inline-block min-h-[1em] w-[1px] self-stretch bg-gray6 opacity-100"/>
+        <ProductDetails />
       </section>
     </main>
-  )
+  );
 }

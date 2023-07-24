@@ -5,7 +5,7 @@ interface PaymentFormProps {}
 
 const PaymentForm: React.FC<PaymentFormProps> = () => {
   return (
-    <div className="w-[49.5rem] flex flex-col gap-4 mb-4">
+    <div className="w-[49.5rem] flex flex-col gap-4">
       <h1 className="text-[48px] text-gray2 font-semibold">Confirm and Pay</h1>
       <div className="mt-6 space-y-8">
         <span className="space-y-1.5">
@@ -226,7 +226,14 @@ const PaymentForm: React.FC<PaymentFormProps> = () => {
         </div>
       </div>
 
-      <div className="flex gap-3 items-center">
+
+      <div className="flex flex-col space-y-1.5">
+        <span className=" text-[22px] font-semibold text-gray2">
+          Total: $757
+        </span>
+        <span className=" text-xs text-gray3">You will pay in USD($)</span>
+      </div>
+      <div className="flex gap-3 items-center rounded-lg bg-gray8 px-4 h-[50px]">
         <input
           type="radio"
           name="hs-radio-group"
@@ -235,15 +242,8 @@ const PaymentForm: React.FC<PaymentFormProps> = () => {
           checked
         />
         <label htmlFor="hs-radio-group-2" className=" text-xs font-semibold">
-          Klarna
+          Receive travel tips, suggestions and offers in your city by email
         </label>
-      </div>
-
-      <div className="flex flex-col space-y-1.5">
-        <span className=" text-[22px] font-semibold text-gray2">
-          Total: 69.420$
-        </span>
-        <span className=" text-xs text-gray3">You will pay in USD($)</span>
       </div>
       <div className="space-y-3">
         <span className="text-xs text-gray3">

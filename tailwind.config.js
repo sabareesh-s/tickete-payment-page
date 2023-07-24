@@ -20,7 +20,9 @@ module.exports = {
         'gray2' : '#474747',
         'gray3' : '#595959',
         'buttonBlack' : '#0A0A0A',
-        'ghostWhite' : '#F6F6F7'
+        'ghostWhite' : '#F6F6F7',
+        'green9': '#006642',
+        'gray6' : '#d6d6d6'
       },
     },
   },
