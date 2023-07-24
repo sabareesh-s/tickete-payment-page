@@ -16,9 +16,11 @@ module.exports = {
         transparent: 'transparent',
         current: 'currentColor',
         'white': '#ffffff',
-        'purple': '#3f3cbb',
+        'gray8': '#f5f5f5',
         'gray2' : '#474747',
-        'gray3' : '#595959'
+        'gray3' : '#595959',
+        'buttonBlack' : '#0A0A0A',
+        'ghostWhite' : '#F6F6F7'
       },
     },
   },

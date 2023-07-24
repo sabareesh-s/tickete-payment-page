@@ -1,5 +1,5 @@
-import TicketeLogo from "@/icons/TicketeLogo";
-import HelpIcon from "@/icons/helpIcon";
+import TicketeLogo from "@/app/icons/TicketeLogo";
+import HelpIcon from "@/app/icons/HelpIcon";
 import React from "react";
 
 interface HeaderProps {
@@ -9,7 +9,7 @@ interface HeaderProps {
 
 const Header: React.FC<HeaderProps> = ({ title, onClick }) => {
   return (
-    <header className="w-full bg-blue-200">
+    <header className="w-full">
       <h1 className="h-[4.5rem] w-[80rem] flex justify-between px-10 items-center mx-auto">
         <a href='#' className="my-auto">
           <TicketeLogo/>
