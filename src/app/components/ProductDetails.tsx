@@ -72,12 +72,8 @@ const ProductDetails: React.FC<ProductDetailsProps> = () => {
           <span className="text-sm">You will pay in USD($)</span>
         </div>
         <div className="flex flex-col gap-1 rounded-lg bg-gray8 px-5 py-4">
-          <span className="font-semibold">
-            Free Cancellation
-          </span>
-          <span>
-            Cancel before 30 days to get a full refund
-          </span>
+          <span className="font-semibold">Free Cancellation</span>
+          <span>Cancel before 30 days to get a full refund</span>
         </div>
       </div>
     </div>

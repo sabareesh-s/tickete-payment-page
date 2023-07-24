@@ -1,5 +1,7 @@
 import React from "react";
 import ShieldLogo from "../icons/ShieldLogo";
+import CCIcon from "../icons/CCIcon";
+import KlarnaIcon from "../icons/KlarnaIcon";
 
 interface PaymentFormProps {}
 
@@ -130,12 +132,15 @@ const PaymentForm: React.FC<PaymentFormProps> = () => {
         {/* radio button here */}
         <div className="space-y-6">
           <div className="flex justify-between">
-            <label
-              htmlFor="hs-radio-group-1"
-              className=" text-base font-semibold"
-            >
-              Credit & debit card
-            </label>
+            <div className="flex gap-4">
+              <CCIcon />
+              <label
+                htmlFor="hs-radio-group-1"
+                className=" text-base font-semibold"
+              >
+                Credit & debit card
+              </label>
+            </div>
 
             <input
               type="radio"
@@ -207,12 +212,16 @@ const PaymentForm: React.FC<PaymentFormProps> = () => {
         </div>
         <div className="space-y-6">
           <div className="flex justify-between">
-            <label
-              htmlFor="hs-radio-group-2"
-              className=" text-base font-semibold"
-            >
-              Klarna
-            </label>
+            <div className="flex gap-4">
+              <KlarnaIcon />
+
+              <label
+                htmlFor="hs-radio-group-2"
+                className=" text-base font-semibold"
+              >
+                Klarna
+              </label>
+            </div>
 
             <input
               type="radio"
@@ -226,7 +235,6 @@ const PaymentForm: React.FC<PaymentFormProps> = () => {
         </div>
       </div>
 
-
       <div className="flex flex-col space-y-1.5">
         <span className=" text-[22px] font-semibold text-gray2">
           Total: $757
@@ -236,7 +244,7 @@ const PaymentForm: React.FC<PaymentFormProps> = () => {
       <div className="flex gap-3 items-center rounded-lg bg-gray8 px-4 h-[50px]">
         <input
           type="radio"
-          name="hs-radio-group"
+          name="hs-radio-group-2"
           className="mt-0.5 border-gray-200 rounded-full text-black-600 focus:ring-black-500"
           id="hs-radio-group-2"
           checked
