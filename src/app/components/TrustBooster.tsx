@@ -25,21 +25,21 @@ const TrustBooster: React.FC<TrustBoosterProps> = () => {
           <ChatIcon />
           <div className="inline-flex flex-col mt-[2.87rem] space-y-1.5">
             <span className="font-semibold">24/7 dedicated support</span>
-            <span>We're here to help, talk to an expert</span>
+            <span>We&apos;re here to help, talk to an expert</span>
           </div>
         </div>
         <div className="px-5 py-4 flex lg:flex-col flex-row rounded-xl lg:border lg:border-gray6">
           <CalendarIcon2 />
           <div className="inline-flex flex-col mt-[2.87rem] space-y-1.5">
             <span className="font-semibold">24/7 dedicated support</span>
-            <span>We're here to help, talk to an expert</span>
+            <span>We&apos;re here to help, talk to an expert</span>
           </div>
         </div>
         <div className="px-5 py-4 flex lg:flex-col flex-row rounded-xl lg:border lg:border-gray6">
           <ShieldLogo2 />
           <div className="inline-flex flex-col mt-[2.87rem] space-y-1.5">
             <span className="font-semibold">24/7 dedicated support</span>
-            <span>We're here to help, talk to an expert</span>
+            <span>We&apos;re here to help, talk to an expert</span>
           </div>
         </div>
       </div>

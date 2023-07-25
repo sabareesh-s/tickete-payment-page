@@ -15,7 +15,7 @@ const PaymentForm: React.FC<PaymentFormProps> = () => {
             Enter your details
           </h2>
           <p className="text-[15px] text-gray3">
-            We'll be sending your tickets to the details below. Booking for a
+            We&apos;ll be sending your tickets to the details below. Booking for a
             friend? Add their details.
           </p>
         </span>

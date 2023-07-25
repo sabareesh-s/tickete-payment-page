@@ -58,7 +58,7 @@ const ProductDetails: React.FC<ProductDetailsProps> = () => {
           <div className="flex gap-4 font-semibold text-green9 justify-between">
             <div className="flex space-x-3 items-center">
               <TagIcon />
-              <span className="underline">'TICKETE10' applied</span>
+              <span className="underline">&apos;TICKETE10&apos; applied</span>
             </div>
             <button className="text-gray2">Remove</button>
           </div>
