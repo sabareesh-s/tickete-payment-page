@@ -23,8 +23,10 @@ module.exports = {
         'ghostWhite' : '#F6F6F7',
         'green9': '#006642',
         'gray6' : '#d6d6d6',
+        'gray5' : '#999999',
         'pumpkin10' : '#7F2D0F',
-        'pumpkin1' : '#FFF7ED'
+        'pumpkin1' : '#FFF7ED',
+        'black' : '#0A0A0A'
       },
     },
   },

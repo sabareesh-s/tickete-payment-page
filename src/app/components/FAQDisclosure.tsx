@@ -8,7 +8,7 @@ interface FAQDisclosureProps {}
 
 const FAQDisclosure: React.FC<FAQDisclosureProps> = () => {
   return (
-    <div className="mt-16 space-y-8 w-[714px]">
+    <div className="mt-16 space-y-8 lg:w-[714px]">
       <span className="text-gray2 font-semibold text-2xl ">Frequently asked questions</span>
       <Disclosure as="div" className="flex flex-col space-y-3">
         {({ open }) => (
@@ -25,6 +25,8 @@ const FAQDisclosure: React.FC<FAQDisclosureProps> = () => {
         )}
       </Disclosure>
 
+      <hr className="h-px my-3 bg-gray6 border-0" />
+
       <Disclosure as="div" className="flex flex-col space-y-3">
         {({ open }) => (
           <>
@@ -38,6 +40,9 @@ const FAQDisclosure: React.FC<FAQDisclosureProps> = () => {
           </>
         )}
       </Disclosure>
+
+      <hr className="h-px my-3 bg-gray6 border-0" />
+
 
       <Disclosure as="div" className="flex flex-col space-y-3">
         {({ open }) => (
@@ -54,6 +59,9 @@ const FAQDisclosure: React.FC<FAQDisclosureProps> = () => {
         )}
       </Disclosure>
 
+      <hr className="h-px my-3 bg-gray6 border-0" />
+
+
       <Disclosure as="div" className="flex flex-col space-y-3">
         {({ open }) => (
           <>
@@ -69,6 +77,9 @@ const FAQDisclosure: React.FC<FAQDisclosureProps> = () => {
         )}
       </Disclosure>
 
+      <hr className="h-px my-3 bg-gray6 border-0" />
+
+
       <Disclosure as="div" className="flex flex-col space-y-3">
         {({ open }) => (
           <>
@@ -83,6 +94,9 @@ const FAQDisclosure: React.FC<FAQDisclosureProps> = () => {
           </>
         )}
       </Disclosure>
+
+      <hr className="h-px my-3 bg-gray6 border-0" />
+
 
       <Disclosure as="div" className="flex flex-col space-y-3">
         {({ open }) => (
@@ -100,6 +114,9 @@ const FAQDisclosure: React.FC<FAQDisclosureProps> = () => {
         )}
       </Disclosure>
 
+      <hr className="h-px my-3 bg-gray6 border-0" />
+
+
       <Disclosure as="div" className="flex flex-col space-y-3">
         {({ open }) => (
           <>
@@ -116,6 +133,9 @@ const FAQDisclosure: React.FC<FAQDisclosureProps> = () => {
         )}
       </Disclosure>
 
+      <hr className="h-px my-3 bg-gray6 border-0" />
+
+
       <Disclosure as="div" className="flex flex-col space-y-3">
         {({ open }) => (
           <>
@@ -131,7 +151,7 @@ const FAQDisclosure: React.FC<FAQDisclosureProps> = () => {
         )}
       </Disclosure>
 
-      <hr className="h-px my-3 bg-gray6 border-0" />
+      <hr className="h-px my-3 bg-gray6 border-0 invisible" />
     </div>
   );
 };

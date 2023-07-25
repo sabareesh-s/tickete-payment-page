@@ -8,11 +8,12 @@ interface ProductDetailsProps {}
 
 const ProductDetails: React.FC<ProductDetailsProps> = () => {
   return (
-    <div className="w-[22.5rem]">
+    <div className="max:w-[10rem] md:max-w-[14rem] lg:max-w-[22.5rem]">
       <div>
-        <div className="flex flex-col gap-3">
+       <h1 className="lg:hidden text-[24px] mb-4 text-gray2 font-semibold">Confirm and Pay</h1>
+        <div className="flex flex-col gap-3 flex-shrink-0">
           <img
-            className="rounded-lg"
+            className="rounded-lg flex-shrink-0 "
             src="https://images.pexels.com/photos/1089645/pexels-photo-1089645.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
             alt="product image"
           />

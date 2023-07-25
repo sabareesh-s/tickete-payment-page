@@ -7,8 +7,8 @@ interface PaymentFormProps {}
 
 const PaymentForm: React.FC<PaymentFormProps> = () => {
   return (
-    <div className="w-[49.5rem] flex flex-col gap-4">
-      <h1 className="text-[48px] text-gray2 font-semibold">Confirm and Pay</h1>
+    <div className=" lg:w-[49.5rem] lg:p-0 p-3 max-w-[49.5rem] flex flex-col gap-4 ">
+      <h1 className="lg:text-[48px] hidden text-gray2 font-semibold">Confirm and Pay</h1>
       <div className="mt-6 space-y-8">
         <span className="space-y-1.5">
           <h2 className="text-2xl font-semibold text-gray2">
@@ -19,7 +19,7 @@ const PaymentForm: React.FC<PaymentFormProps> = () => {
             friend? Add their details.
           </p>
         </span>
-        <div className="grid grid-cols-2 gap-6">
+        <div className="grid md:grid-cols-1 lg:grid-cols-2 gap-6">
           <div className="relative">
             <input
               type="text"
@@ -45,7 +45,7 @@ const PaymentForm: React.FC<PaymentFormProps> = () => {
               htmlFor="default_outlined"
               className="absolute text-sm text-gray-500 duration-300 transform -translate-y-4 scale-75 top-2 z-10 origin-[0] bg-white  px-2 peer-focus:px-2 peer-focus:text-blue-600 peer-placeholder-shown:scale-100 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:top-1/2 peer-focus:top-2 peer-focus:scale-75 peer-focus:-translate-y-4 left-1"
             >
-              Full Name
+              Phone
             </label>
           </div>
           <div className="relative">
@@ -59,7 +59,7 @@ const PaymentForm: React.FC<PaymentFormProps> = () => {
               htmlFor="default_outlined"
               className="absolute text-sm text-gray-500 duration-300 transform -translate-y-4 scale-75 top-2 z-10 origin-[0] bg-white  px-2 peer-focus:px-2 peer-focus:text-blue-600 peer-placeholder-shown:scale-100 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:top-1/2 peer-focus:top-2 peer-focus:scale-75 peer-focus:-translate-y-4 left-1"
             >
-              Full Name
+              Email
             </label>
           </div>
           <div className="relative">
@@ -73,7 +73,7 @@ const PaymentForm: React.FC<PaymentFormProps> = () => {
               htmlFor="default_outlined"
               className="absolute text-sm text-gray-500 duration-300 transform -translate-y-4 scale-75 top-2 z-10 origin-[0] bg-white  px-2 peer-focus:px-2 peer-focus:text-blue-600 peer-placeholder-shown:scale-100 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:top-1/2 peer-focus:top-2 peer-focus:scale-75 peer-focus:-translate-y-4 left-1"
             >
-              Full Name
+              Confirm Email
             </label>
           </div>
         </div>
@@ -88,7 +88,7 @@ const PaymentForm: React.FC<PaymentFormProps> = () => {
             We need a few more details to complete your reservation.
           </p>
         </span>
-        <div className="grid grid-cols-2 gap-6">
+        <div className="grid md:grid-cols-1 lg:grid-cols-2 gap-6">
           <div className="relative">
             <input
               type="text"
@@ -114,7 +114,7 @@ const PaymentForm: React.FC<PaymentFormProps> = () => {
               htmlFor="default_outlined"
               className="absolute text-sm text-gray-500 duration-300 transform -translate-y-4 scale-75 top-2 z-10 origin-[0] bg-white  px-2 peer-focus:px-2 peer-focus:text-blue-600 peer-placeholder-shown:scale-100 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:top-1/2 peer-focus:top-2 peer-focus:scale-75 peer-focus:-translate-y-4 left-1"
             >
-              Full Name
+              Phone
             </label>
           </div>
         </div>
@@ -150,7 +150,7 @@ const PaymentForm: React.FC<PaymentFormProps> = () => {
               checked
             />
           </div>
-          <div className="grid grid-cols-2 gap-6">
+          <div className="grid md:grid-cols-1 lg:grid-cols-2 gap-6">
             <div className="relative">
               <input
                 type="text"
@@ -162,7 +162,7 @@ const PaymentForm: React.FC<PaymentFormProps> = () => {
                 htmlFor="default_outlined"
                 className="absolute text-sm text-gray-500 duration-300 transform -translate-y-4 scale-75 top-2 z-10 origin-[0] bg-white  px-2 peer-focus:px-2 peer-focus:text-blue-600 peer-placeholder-shown:scale-100 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:top-1/2 peer-focus:top-2 peer-focus:scale-75 peer-focus:-translate-y-4 left-1"
               >
-                Full Name
+                Name on card
               </label>
             </div>
             <div className="relative">
@@ -176,7 +176,7 @@ const PaymentForm: React.FC<PaymentFormProps> = () => {
                 htmlFor="default_outlined"
                 className="absolute text-sm text-gray-500 duration-300 transform -translate-y-4 scale-75 top-2 z-10 origin-[0] bg-white  px-2 peer-focus:px-2 peer-focus:text-blue-600 peer-placeholder-shown:scale-100 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:top-1/2 peer-focus:top-2 peer-focus:scale-75 peer-focus:-translate-y-4 left-1"
               >
-                Full Name
+                Card number
               </label>
             </div>
             <div className="relative">
@@ -190,7 +190,7 @@ const PaymentForm: React.FC<PaymentFormProps> = () => {
                 htmlFor="default_outlined"
                 className="absolute text-sm text-gray-500 duration-300 transform -translate-y-4 scale-75 top-2 z-10 origin-[0] bg-white  px-2 peer-focus:px-2 peer-focus:text-blue-600 peer-placeholder-shown:scale-100 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:top-1/2 peer-focus:top-2 peer-focus:scale-75 peer-focus:-translate-y-4 left-1"
               >
-                Full Name
+                Expiry date
               </label>
             </div>
             <div className="relative">
@@ -204,12 +204,12 @@ const PaymentForm: React.FC<PaymentFormProps> = () => {
                 htmlFor="default_outlined"
                 className="absolute text-sm text-gray-500 duration-300 transform -translate-y-4 scale-75 top-2 z-10 origin-[0] bg-white  px-2 peer-focus:px-2 peer-focus:text-blue-600 peer-placeholder-shown:scale-100 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:top-1/2 peer-focus:top-2 peer-focus:scale-75 peer-focus:-translate-y-4 left-1"
               >
-                Full Name
+                CVV/CVC
               </label>
             </div>
           </div>
-          {/* <hr className="h-px  bg-gray-200" /> */}
         </div>
+          <hr className="h-px  bg-gray-200" />
         <div className="space-y-6">
           <div className="flex justify-between">
             <div className="flex gap-4">
@@ -231,7 +231,7 @@ const PaymentForm: React.FC<PaymentFormProps> = () => {
               checked
             />
           </div>
-          {/* <hr className="h-px bg-gray-200" /> */}
+          <hr className="h-px bg-gray-200" />
         </div>
       </div>
 

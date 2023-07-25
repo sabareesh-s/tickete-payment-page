@@ -5,7 +5,7 @@ interface ChatWithUsProps {}
 
 const ChatWithUs: React.FC<ChatWithUsProps> = ({}) => {
   return (
-    <div className="bg-pumpkin1 w-[22.5rem] mt-16 rounded-xl h-fit flex justify-between px-6 py-8 text-pumpkin10">
+    <div className="bg-pumpkin1 w-[22.5rem] lg:w-[22.5rem] mt-16 rounded-xl h-fit flex justify-between px-6 py-8 text-pumpkin10">
       <div className="flex flex-col">
         <span className="text-lg font-semibold">Need help?</span>
         <span className="mt-1.5">We're here to help, 24/7</span>
